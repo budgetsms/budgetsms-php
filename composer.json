@@ -1,0 +1,23 @@
+{
+    "name": "budgetsms/budgetsms-php",
+    "description": "Official PHP client for the BudgetSMS HTTP API: send SMS worldwide, test calls, check credit, number portability and HLR lookups, delivery status and pricing.",
+    "type": "library",
+    "keywords": ["sms", "sms api", "sms gateway", "budgetsms", "hlr", "number portability", "otp"],
+    "homepage": "https://www.budgetsms.net/sms-http-api/",
+    "license": "MIT",
+    "authors": [{"name": "BudgetSMS B.V.", "homepage": "https://www.budgetsms.net/"}],
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*"
+    },
+    "suggest": {
+        "ext-curl": "Used for the HTTP requests when available (falls back to file_get_contents)"
+    },
+    "autoload": {
+        "psr-4": {"BudgetSMS\\": "src/"}
+    },
+    "support": {
+        "docs": "https://www.budgetsms.net/sms-http-api/",
+        "email": "support@budgetsms.net"
+    }
+}
