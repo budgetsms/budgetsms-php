@@ -28,7 +28,7 @@ try {
 }
 ```
 
-While developing, use `testSms()` with the same arguments. It is a simulator: your credentials are checked and the result has the same shape, but nothing is sent or charged, the message id and price are random, and about one in five calls throws a random `2xxx` error so you can test your error handling. Real prices come from `pricing()`.
+While developing, use `testSms()` with the same arguments. It is a simulator: your credentials are checked and the result has the same shape, but no SMS is sent and nothing is charged, the message id and price are random, and about one in five calls throws a random `2xxx` error so you can test your error handling. Real prices come from `pricing()`.
 
 ```php
 $test = $sms->testSms('31612345678', 'Hello', 'MyCompany');

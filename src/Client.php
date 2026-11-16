@@ -41,7 +41,7 @@ final class Client
     }
 
     /**
-     * Simulator for sendSms: same parameters and result type, nothing is sent or charged. The API checks your
+     * Simulator for sendSms: same parameters and result type, no SMS is sent and nothing is charged. The API checks your
      * credentials and returns a random message id and price; about one in five calls throws a random 2xxx
      * ApiException on purpose so error handling can be tested. The destination is not validated.
      */
